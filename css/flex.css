@@ -10,8 +10,8 @@ header{
     position: fixed;
     width: 100%;
     background-color:white;
-    top: 0;
-    left: 0;
+    /* top: 0;
+    left: 0; */
     box-shadow: 0 0 8px 0 black;
     display: flex;
     flex-direction: row;
@@ -21,6 +21,10 @@ header{
 
 header div, header nav ul{
     display: flex;
+}
+header a{
+    text-decoration: none;
+    color:black;
 }
 
 header img{
@@ -33,16 +37,98 @@ header p{
 }
 
 header nav ul li {
-    margin: 0px 20px;
+    margin: 0px 70px;
 }
 header nav ul {
     list-style-type: none;
 }
 main {
+    /* display: flex; */
     background-image: url(../img/bg.jpg);
     height: 92vh;
     padding-top: 80px;
 }
+.container{
+    margin: 20px auto;
+    background-color:white;
+    width: 500px;
+    height: 70vh;
+    border: 1px solid #5f4a90;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.container h1{
+    margin-top:25px;
+    font-family: arial, sans-ser;
+    text-align: center;
+}
+
+.container form{
+    margin-top: 23px;
+}
+
+input, textarea{
+    margin: 5px auto;
+    width: 95%;
+    display:block;
+    border: 1px solid #5f4a90;
+    border-radius: 30px;
+}
+input{
+    height:30px;
+}
+label{
+    margin-left: 30px;
+    font-weight:600;
+}
+.post-send{
+    display:flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    width: 95%;
+}
+.post-send input{
+    margin: 26px 0 0 30px;
+    width:15px;
+}
+.checkbox{
+    display:flex;
+}
+.post-send label{
+    
+    margin: 30px 0 0 10px;
+    
+}
+button{
+    height: 35px;
+    width: 150px;
+    margin-top: 25px;
+    border:none;
+    border-radius:30px;
+    background-color:#5f4a90;
+    font-family: arial, sans-ser;
+    color: white;
+    font-size:1rem;
+    font-weight:500;
+
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#5f4a90;
+
+    color:white;
+    height: 53px;
+}
+footer p{
+    
+}
+
 
 
 /* responsividade */
