@@ -6,44 +6,9 @@
     font-family: 'Open Sans', sans-serif;;
 }
 
-header{
-    position: fixed;
-    width: 100%;
-    background-color:white;
-    /* top: 0;
-    left: 0; */
-    box-shadow: 0 0 8px 0 black;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header div, header nav ul{
-    display: flex;
-}
-header a{
-    text-decoration: none;
-    color:black;
-}
-
-header img{
-    width: 80px;
-} 
-
-header p{
-    margin-top: 20px;
-   
-}
-
-header nav ul li {
-    margin: 0px 70px;
-}
-header nav ul {
-    list-style-type: none;
-}
+/*-------------- aqui vinha o header------------  */
 main {
-    /* display: flex; */
+    
     background-image: url(../img/bg.jpg);
     height: 92vh;
     padding-top: 80px;
@@ -52,7 +17,7 @@ main {
     margin: 20px auto;
     background-color:white;
     width: 500px;
-    height: 70vh;
+    height: 457px;
     border: 1px solid #5f4a90;
     border-radius: 10px;
     display: flex;
@@ -73,7 +38,7 @@ main {
 
 input, textarea{
     margin: 5px auto;
-    width: 95%;
+    width: 90%;
     display:block;
     border: 1px solid #5f4a90;
     border-radius: 30px;
@@ -92,7 +57,7 @@ label{
     width: 95%;
 }
 .post-send input{
-    margin: 26px 0 0 30px;
+    margin: 27px 0 0 30px;
     width:15px;
 }
 .checkbox{
@@ -125,32 +90,51 @@ footer{
     color:white;
     height: 53px;
 }
-footer p{
-    
-}
-
 
 
 /* responsividade */
 
-@media(min-width:769px){
-    header nav img{
-        display: none;
+@media(max-width:576px){
+    .container{
+        margin: 20px auto;
+        background-color:white;
+        width: 80%;
+        height: 457px;
+        border: 1px solid #5f4a90;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
     }
-}
 
-@media(max-width:768px){
-    header nav ul{
-        display: none;
+    input, textarea, button{
+        margin: 5px auto 0;
+        width: 90%;
+        display:block;
+        border: 1px solid #5f4a90;
+        border-radius: 30px;
     }
 
-    nav img{
-        width: 40px;
-        margin-top: 12px;
-        margin-right: 10px;
+    .post-send{
+        margin: 0px 0 0 0px;
+        display: block;
+        width: 90%;
+    }
+    .post-send label{
+        margin: 10px 0 0 10px;
+    }
+    .post-send input{
+        margin: 6px 0 0 30px;
+        width:15px;
     }
    
+    button{
+        font-size:1.5rem;
+        height: 35px;
+        width: 100%;
+        margin: 5px 0 0 15px;
+    }
     
+ 
 }
-
-
