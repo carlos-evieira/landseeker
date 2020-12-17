@@ -16,8 +16,9 @@ main img {
  
 }
 .main-text{
-    position: relative;
-    top:-250px;
+    position: absolute;
+    width: 100%;
+    top: 400px;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -45,9 +46,9 @@ main img {
     
     display: flex;
     /* border: 1px solid green; */
-    width: 90%;
+    width: 95%;
     margin:20px auto;
-    justify-content:space-between;
+    justify-content:center;
     flex-wrap: wrap ;
     
 }
@@ -88,9 +89,26 @@ footer{
 
 /* responsividade */
 
-@media(max-width:576px){
-  
-
+@media(max-width:568px){
+    .container{
     
- 
+        display: flex;
+        /* border: 1px solid green; */
+        width: 80%;
+        margin:20px auto;
+        justify-content:center;
+        flex-wrap: wrap ;
+        
+    }
+    .product{
+        width: 100%;
+        /* margin:20px; */
+        display: flex;
+        position:relative;
+        justify-content:center;
+    }
+
+    .main-text button{
+    top: 470px;
+    }
 }
